@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src:    url("Asset/font/go3v2.ttf") format("truetype"),
+            url("Asset/font/Poppins-Light.ttf") format("truetype"),
+            url("Asset/font/Poppins-Regular.ttf") format("truetype"),
+            url("Asset/font/Poppins-Italic.ttf") format("truetype"),
+            url("Asset/font/Poppins-Medium.ttf") format("truetype"),
+            url("Asset/font/Poppins-SemiBold.ttf") format("truetype"),
+            url("Asset/font/Poppins-Bold.ttf") format("truetype");
+    }
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C1C1C;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: left;
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header-wrapper {
+    height: 60px;
+}
+
+.header-left {
+    float: left;
+    color: #FEC763;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4vw;
+}
+
+.header-right {
+    float: right;
+    margin-top: 25px;
+}
+
+
+.header-right a{
+    margin-left: 40px;
+    color: #FEC763;
+    font-size: 20px;
+}
+
+.header-right a:hover {
+    color: #CECECE;
+}
+
+/* End Header*/
+
+/* Top */
+
+.top-wrapper {
+    margin-top: 50px;
+    height: 700px;
+}
+
+.top-left {
+    padding-top: 100px;
+}
+
+.top-left h1 {
+    color: #1C1C1C;
+    font-size: 3.5vw;
+    -webkit-text-stroke: 1px #FEC763;
+}
+
+.top-left h2 {
+    font-size: 1.7vw;
+    font-weight: 400;
+    color: #CECECE;
+}
+
+.top-left p{
+    font-size: large;
+    color: #CECECE;
+    padding-right: 50px;
+}
+
+.top-item {
+    margin-top: 100px;
+    float: left;
+    width: 50%;
+}
+
+.top-right {
+    height: 650px ;
+}
+
+#img-header {
+    float: right;
+    width: 60%;
+    height: 650px;
+}
+
+#img-about {
+    margin-top: 100px;
+    float: right;   
+}
+
+#img-shop {
+    float: right;
+    height: 650px;
+    width: auto;
+}
+
+/* End Top */
+
+
+/* Footer */
+.footer-wrapper {
+    height: 150px;
+}
+
+.f-item {
+    float: left;
+    width: 50%;
+}
+
+.f-right {
+    margin-top: 70px;
+    color: #707070;
+    font-weight: 500;
+    text-align: right;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+/* End Footer */
+
+
+
+div.gallery {
+    margin: 5px;
+    border: 2px solid #FEC763;
+    float: right;
+    width: 204px;
+    margin-left: 30px;
+    color: #CECECE;
+}
+
+div.gallery:hover {
+    border: 2px solid #707070;
+}
+
+div.gallery img {
+    width: 200px;
+    height: 200px;
+}
+
+div.desc {
+    padding: 15px;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+.circle{
+    position: absolute;
+}
+
+.circle-small{
+    top: -15rem;
+    left: -15rem;
+    z-index: -1;
+}
+
+.circle-large{
+    bottom: -15rem;
+    right: -30rem;
+    z-index: -1;
+}
+
+.circle-large img{
+  width: 1500px;
+  height: 1500px;
+}
+
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+  
+.responsive {
+    width: 100%;
+    max-width: 50vw;
+    height: auto;
+}
+
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+}
+
+.layer{
+    background-color: #B2aabf;
+}
+
+.layer-1{
+    flex: 1;
+}
+
+.layer-2{
+    flex: 1;
+}
+
+.layer-3{
+    flex: 1;
+}
+
+
+@media only screen and (max-width: 1280px) {
+ 
+.header-wrapper {
+    display: none;
+}
+
+.top-wrapper {
+    display: none;
+}
+
+.footer-wrapper {
+    display: none;
+}
+    
+ .circle {
+     display: none;
+ }
+
+ .parent {
+     display: contents;
+ }
+
+}
+
+@media only screen and (min-width: 1280px) {
+    .centered  {
+        display: none;
+    }
+}
+
+/* Page Load Fade In*/
+.fadeIn  {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* End Page Load Fade In*/

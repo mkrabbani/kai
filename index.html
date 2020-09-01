@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK-29 | Kai Havertz Official Website</title>
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+</head>
+<body>
+    <!---Start Header--->
+    <header class="header-wrapper" >
+        <div class="container">
+            <div class="header-left">
+                <p>KK-29</p>
+            </div>
+            <div class="header-right">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="social.html">Social</a>
+                <a href="shop.html">Shop</a>
+            </div>
+        </div>
+    </header>
+    <!---End Header--->
+
+    <!-- Content -->
+    <div class="top-wrapper">
+        <div class="container">
+            <div class="top-item top-left">
+                <h1>Kai Havertz</h1>
+                <h2>Official Website</h2>
+                <p>Pellentesque volutpat ornare libero at hendrerit. Pellentesque at porttitor odio. Etiam euismod, lectus sit amet consequat imperdiet, ut elementum lorem eros vel odio.</p>
+            </div>
+            <div class="top-item top-right">
+                <img id="img-header" src="Asset/Img/sponsor/kai home.png" alt="header-image"/>
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!--Start Footer-->
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="test">
+                <div class="f-item" style="padding-top: 10px;">
+                    <img src="Asset/Img/sponsor/IMGBIN_adidas-logo-png_-1.png" width="100px" height="100px">
+                    <img class="logo" src="Asset/Img/sponsor/PikPng.com_gatorade-logo-png_-1.png" width="80px" height="90px">
+                    <img class="logo" src="Asset/Img/sponsor/PngItem_-1.png" width="120px" height="80px" >
+                </div>
+                <div class="f-item f-right">
+                    <p>Copyright © 2020 Kai Havertz Marketing GmbH. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--End Footer-->
+
+<!-- Circle -->
+    <div class="circle circle-small">
+        <img src="Asset/Img/Ellipse 1.png" alt="">
+    </div>
+    <div class="circle circle-large">
+        <img src="Asset/Img/Ellipse 3.svg" alt="">
+    </div>
+<!-- End Circle -->
+
+
+<!-- Centered-->
+    <div class="centered">
+        <img src="https://i.giphy.com/media/l3rRKeUJ5LK82VksZM/source.gif"  class="responsive" />
+        <p style="color:white; font-size: 3.5vw">Sorry this Website only available for desktop :p</p>
+    </div>
+<!-- End Centered-->
+
+
+<div class="overlay">
+    <div class="layer layer-1"></div>
+    <div class="layer layer-2"></div>
+    <div class="layer layer-3"></div>
+</div>
+
+<!--Gsap CDN    -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/gsap.min.js"></script>
+
+<script>
+    gsap.to('.layer-1', {y: '-100vh', delay: .5});
+    gsap.to('.layer-2', {y: '-100vh', delay: .7});
+    gsap.to('.layer-3', {y: '-100vh', delay: .9});
+    gsap.to('.overlay', {y: '-100vh', delay: 1.5});
+
+    gsap.fromTo('.top-left',
+        {x: '30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(1.7)', delay:1.9});
+
+    gsap.fromTo('.top-right',
+        {x: '30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(1.7)', delay:2.3});
+
+    gsap.fromTo('.circle-small',
+        {x: '-30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(1.7)', delay:1});
+
+    gsap.fromTo('.circle-large',
+        {x: '30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(1.7)', delay:1.5});
+</script>
+</body>
+</html>
